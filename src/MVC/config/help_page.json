@@ -1,0 +1,20 @@
+{
+  "diet": [
+    "Use the Diet Page to track your calorie intake by tracking the meals you ate throughout the day.\nFirst select the type of meal from the Meal Type drop down and click Set Meal Type. Then select food and drinks you have eaten and add them to the meal.\nIf you want to remove an item from the meal, highlight the item and click Remove From Meal.\nWhen you are happy with the meal, click Add Meal.\nIf you want to remove a meal from your day, highlight the meal and click Remove Meal.\n\n",
+    "At the top of the page are three tabs: Today, History and Customise Food/Drink.\nThe History tab shows your caloric intake per day using a table and a graph.\nYou can change the range of the graph by entering new dates and selecting Set Graph Range.\n\n",
+    "The Customise Food/Drink tab lets you change the food and drink you can select when creating a meal.\nTo add a new item select the type, fill in the text fields and select Add Item.\nTo remove an item, highlight the item and click Remove Item"
+  ],
+  "fitness": [
+    "Use the Fitness page to keep track of your exercise and set goals for yourself.\nYou can add exercises you have done by entering the details of the exercise and clicking Add Exercise.\nYou can remove an exercise by highlighting it and clicking Remove Exercise.\nStrength and Cardio exercises are tracked and inserted separated.\n\n",
+    "At the top of the screen there are four tabs: Today, History, Goals and Customise Exercises. \nThe History tab lets you see your exercise progress using graphs and tables for each exercise type.\nThe Goals tab lets you set fitness goals for yourself.\n Add a new goal by inserting the information and clicking Add Goal. You can remove a goal by highlighting it and clicking Remove Goal.\nThe Customise Exercises tab lets you change the exercises available when setting goals, viewing history and tracking exercises you have done."
+  ],
+  "groups": [
+    "Use the Groups page to work on fitness goals with other people. On the groups dashboard you will see announcements from the groups your in as well as a list of your groups.\nYou can go to a group page by highlighting a group and clicking Open Selected Group Page.\nYou can leave a group by highlight a group and clicking Leave Selected Group.\nYou can join a new group by entering in a group code and clicking Join Group With Code.\n\n",
+    "On a group’s Hub page you can see announcements, favourite the group, see a list of members and join the group goal.\n\n",
+    "At the top of the screen there are three tabs. The last two tabs are Group Goal and Manage Group which are only accessible to the owner of the group.\nUnder the Group Goal tab the owner can set a goal for all members of the group to opt in to.\n\n",
+    "Under the Manage Group Tab the owner is able to make an announcement by typing in an announcement and clicking Send.\nThe owner can invite users by typing in a username and clicking Invite User.\nThe owner can kick users by highlight a user and clicking Kick Selected user."
+  ],
+  "points": [
+    "Use points to show off your fitness prowess.\nThe more points you have the more experienced you are with the app.\nYou can get a maximum of 300 points in a day.\nLogging in every day gives you 50 points. Meeting and staying within range of your calorie goal gives you 150 points. Completing a goal gives you 100 points.\nTry to see how many you can get."
+  ]
+}

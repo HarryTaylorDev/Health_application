@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #e8e8e8;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="MVC.controller.CreateGroupController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #387eff;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #387eff;">
+               <children>
+                  <Label fx:id="labelUsername" text="&lt;username&gt;" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="TOP_CENTER" spacing="10.0">
+                     <children>
+                        <Label text="Points:" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelPoints" text="&lt;points&gt;" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Button fx:id="buttonHome" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Home">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonDiet" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Diet">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/diet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonFitness" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Fitness">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fitness.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonWeight" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Weight">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/weight.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonGroups" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="200.0" styleClass="buttonMenuSelected" stylesheets="@../style/style.css" text="Groups">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/groups-filled.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="145.0" prefWidth="200.0" style="-fx-background-color: #387eff;">
+               <children>
+                  <Button fx:id="buttonHelp" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Help">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/help.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonSettings" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Settings">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="buttonSignOut" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="194.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Sign Out">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <AnchorPane layoutX="200.0" minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutY="1.0" prefHeight="720.0" prefWidth="1080.0" spacing="10.0">
+               <children>
+                  <Label text="Create Group">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldGroupName" maxWidth="450.0" promptText="Group Name">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextArea fx:id="textAreaGroupDescription" maxHeight="100.0" maxWidth="450.0" prefWidth="450.0" promptText="Group Description" wrapText="true" />
+                  <Label text="Group Image">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+                     <children>
+                          <ToggleButton fx:id="imgButtonBaseball" prefHeight="115.0" prefWidth="115.0">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/group_icons/baseball.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="toggleGroupImage" />
+                           </toggleGroup>
+                          </ToggleButton>
+                        <ToggleButton fx:id="imgButtonBoxing" prefHeight="115.0" prefWidth="115.0" toggleGroup="$toggleGroupImage">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/group_icons/boxing.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </ToggleButton>
+                        <ToggleButton fx:id="imgButtonFootball" prefHeight="115.0" prefWidth="115.0" toggleGroup="$toggleGroupImage">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/group_icons/football.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </ToggleButton>
+                        <ToggleButton fx:id="imgButtonGolf" prefHeight="115.0" prefWidth="115.0" toggleGroup="$toggleGroupImage">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/group_icons/golf.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </ToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ToggleButton fx:id="imgButtonRunning" prefHeight="115.0" prefWidth="115.0" toggleGroup="$toggleGroupImage">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/group_icons/running.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </ToggleButton>
+                        <ToggleButton fx:id="imgButtonSkiing" prefHeight="115.0" prefWidth="115.0" toggleGroup="$toggleGroupImage">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/group_icons/skiing.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </ToggleButton>
+                        <ToggleButton fx:id="imgButtonSwimming" prefHeight="115.0" prefWidth="115.0" toggleGroup="$toggleGroupImage">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/group_icons/swimming.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </ToggleButton>
+                        <ToggleButton fx:id="imgButtonVolleyball" prefHeight="115.0" prefWidth="115.0" toggleGroup="$toggleGroupImage">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/group_icons/volleyball.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </ToggleButton>
+                        <ToggleButton fx:id="imgButtonWeightLifting" prefHeight="115.0" prefWidth="115.0" toggleGroup="$toggleGroupImage">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/group_icons/weight_lifting.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </ToggleButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="buttonCreateGroup" mnemonicParsing="false" onAction="#createGroup" text="Create Group" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="29.0" prefWidth="360.0">
+                     <children>
+                        <Separator layoutX="1.0" layoutY="11.0" prefHeight="7.0" prefWidth="1040.0" />
+                        <Label alignment="CENTER" layoutX="508.0" layoutY="2.0" prefHeight="24.0" prefWidth="25.0" style="-fx-background-color: #e8e8e8;" text="Or">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Hyperlink fx:id="hyperlinkReturn" alignment="CENTER" onAction="#hyperlinkReturnClicked" prefHeight="33.0" prefWidth="460.0" text="Return to Groups Dashboard" textAlignment="CENTER" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

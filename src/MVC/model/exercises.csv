@@ -1,0 +1,14 @@
+﻿Exercise,Calories,Time (mins),ExerciseType
+General weight lifting,112,30,STRENGTH
+Intensive weight lifting,252,30,STRENGTH
+Calisthenics,298,30,STRENGTH
+Cycling (Spinning),260,30,CARDIO
+Rowing (Indoor),316,30,CARDIO
+General gymnastics,149,30,CARDIO
+Walking,149,30,CARDIO
+Jogging,203,30,CARDIO
+Running,269,30,CARDIO
+Swimming,295,30,CARDIO
+Skiing,180,30,CARDIO
+Rollerblading,400,30,CARDIO
+Surfing,100,30,CARDIO

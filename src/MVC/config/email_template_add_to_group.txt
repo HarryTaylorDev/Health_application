@@ -1,0 +1,15 @@
+Dear <USERNAME>,
+
+You have been invited to join a fitness group!
+
+Group Name:  <GROUP> 
+Group Owner: <OWNER>
+Description: <DESCRIPTION> 
+
+Your joining code is: <CODE>
+
+Please enter this code on the groups dashboard to gain access.
+
+Best wishes,
+
+The Redefining Health team

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="anchor" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #e8e8e8;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="MVC.controller.DashboardGroupsController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #387eff;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #387eff;">
+               <children>
+                  <Label fx:id="labelUsername" text="&lt;username&gt;" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="TOP_CENTER" spacing="10.0">
+                     <children>
+                        <Label text="Points:" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelPoints" text="&lt;points&gt;" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Button fx:id="buttonHome" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Home">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonDiet" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Diet">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/diet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonFitness" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Fitness">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fitness.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonWeight" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Weight">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/weight.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonGroups" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="200.0" styleClass="buttonMenuSelected" stylesheets="@../style/style.css" text="Groups">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/groups-filled.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="145.0" prefWidth="200.0" style="-fx-background-color: #387eff;">
+               <children>
+                  <Button fx:id="buttonHelp" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Help">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/help.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonSettings" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Settings">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="buttonSignOut" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="194.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Sign Out">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <AnchorPane layoutX="200.0" minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="-200.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutY="2.0" prefHeight="720.0" prefWidth="540.0" spacing="10.0">
+               <children>
+                  <Label text="All My Recent Group Announcements">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="630.0">
+                     <content>
+                        <TextFlow fx:id="textFlowAnnouncements" maxWidth="490.0" minHeight="610.0" minWidth="470.0" style="-fx-background-color: #f7f7f7;" />
+                     </content>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </ScrollPane>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="540.0" prefHeight="720.0" prefWidth="540.0" spacing="10.0">
+               <children>
+                  <Label fx:id="labelUsernameGroups" text="My Groups">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableViewGroupsList" maxHeight="1.7976931348623157E308" minHeight="200.0" prefHeight="408.0" prefWidth="510.0">
+                     <columns>
+                        <TableColumn fx:id="groupListNameColumn" minWidth="400.0" prefWidth="510.0" text="Groups List" />
+                     </columns>
+                  </TableView>
+                  <HBox alignment="TOP_CENTER" spacing="10.0">
+                     <children>
+                        <Button fx:id="buttonOpenSelectedGroup" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#openGroupHub" prefWidth="250.0" text="Open Selected Group Page" />
+                        <Button fx:id="buttonLeaveGroup" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#leaveGroupAction" prefWidth="250.0" text="Leave Selected Group" />
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="29.0" prefWidth="360.0">
+                     <children>
+                        <Separator layoutX="1.0" layoutY="11.0" prefHeight="7.0" prefWidth="510.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Pane>
+                  <Button fx:id="buttonCreateGroup" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#createGroupAction" text="Create your own group now!" />
+                  <Pane prefHeight="29.0" prefWidth="360.0">
+                     <children>
+                        <Separator layoutX="1.0" layoutY="11.0" prefHeight="7.0" prefWidth="510.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Pane>
+                  <HBox prefWidth="315.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="textFieldCode" prefWidth="310.0" promptText="Code" />
+                        <Button fx:id="buttonJoinGroupWithCode" mnemonicParsing="false" onAction="#joinGroupWithCode" text="Join Group With Code" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

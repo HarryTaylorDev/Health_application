@@ -1,0 +1,102 @@
+﻿Name, weight, calories ,FoodType
+Apple,182g,95,FOOD
+Apricot,35g,17,FOOD
+Avocado,200g,320,FOOD
+Banana,125g,111,FOOD
+Blackberries,144g,62,FOOD
+Blueberries,148g,84,FOOD
+Cherries,8g,4,FOOD
+Dates,7g,20,FOOD
+Grapes,151g,104,FOOD
+Guava,55g,37,FOOD
+Kiwi,183g,112,FOOD
+Lemon,58g,17,FOOD
+Lime,67g,20,FOOD
+Mango,336g,202,FOOD
+Nectarine,150g,66,FOOD
+Olives,3g,2,FOOD
+Orange,131g,62,FOOD
+Peach,150g,59,FOOD
+Pear,178g,101,FOOD
+Pineapple,905g,453,FOOD
+Raisin,145g,434,FOOD
+Strawberries,152g,49,FOOD
+Watermelon,286g,86,FOOD
+Asparagus,28g,7,FOOD
+Carrot,60g,17,FOOD
+Potato,120g,867,FOOD
+Broccoli,28g,9,FOOD
+Brussel Sprout,28g,10,FOOD
+Button Mushroom,50g,7,FOOD
+Sweetcorn,71g,79,FOOD
+Pepper,28g,4,FOOD
+Mushy Peas,200g,173,FOOD
+Onion,180g,55,FOOD
+Spinach,28g,7,FOOD
+Cucumber,14g,1,FOOD
+Celery,40g,3,FOOD
+Tomato,100g,18,FOOD
+Slice of White Bread,?,95,FOOD
+Slice of White Toast,?,87,FOOD
+Slice of Fried White Bread,?,141,FOOD
+Slice of Brown Bread,?,74,FOOD
+Slice of Brown Toast,?,65,FOOD
+Slice of Rye Bread,?,55,FOOD
+Scone,40g,145,FOOD
+Naan,160g,538,FOOD
+Jaffa Cake,?,45,FOOD
+Jam Donut,?,252,FOOD
+Hot Cross Bun,?,155,FOOD
+Ricotta,50g,67,FOOD
+Cheddar,50g,210,FOOD
+Feta,50g,131,FOOD
+Goats Cheese,50g,130,FOOD
+Parmesan,50g,200,FOOD
+Red Leicester,50g,200,FOOD
+Long Grain Rice,50g,175,FOOD
+Egg Noodles,81g,279,FOOD
+Instant Noodles,100g,170,FOOD
+Fusilli,90g,316,FOOD
+Macaroni,28g,99,FOOD
+Penne,100g,452,FOOD
+Steak,28g,42,FOOD
+Mince Beef,75g,214,FOOD
+Chicken Breast,100g,148,FOOD
+Burger with Cheese,?,530,FOOD
+Chicken Wings,6(wings),471,FOOD
+Chicken Nuggets,10(nuggets),510,FOOD
+White Fish (Baked),100g,210,FOOD
+Pale Fish (Baked),100g,230,FOOD
+Oily Fish (Baked),100g,275,FOOD
+Cornflakes,30g,121,FOOD
+Coco Pops,30g,116,FOOD
+Rice Krispies,30g,115,FOOD
+Cheerios,30g,111,FOOD
+Special K,30g,114,FOOD
+Weetabix,2 portions,134,FOOD
+Shreddies,30g,111,FOOD
+Pizza (Slice),?,197,FOOD
+Chips,100g,380,FOOD
+Chocolate,100g,600,FOOD
+Crisps,25g,150,FOOD
+Yoghurt (plain),??,145,FOOD
+Lager,Pint,223,DRINK
+Wine,175ml,133,DRINK
+Cider,Pint,197,DRINK
+Cream Liqueur,50ml,153,DRINK
+Alcopop,330ml,172,DRINK
+Water,250ml,0,DRINK
+Tea (Milk+Sugar),1 cup,44,DRINK
+Tea (Milk),1 Cup,19,DRINK
+Tea (Sugar),1 Cup,24,DRINK
+Tea,1 Cup,1,DRINK
+Port,50ml,77,DRINK
+Gin,50ml,95,DRINK
+Vodka,50ml,97,DRINK
+Orange Juice,250ml,110,DRINK
+Whole Milk,250ml,165,DRINK
+Cola,250ml,60,DRINK
+Fanta,250ml,33,DRINK
+Dr Pepper,250ml,50,DRINK
+Coffee,250ml,2,DRINK
+Energy Drink,250ml,80,DRINK

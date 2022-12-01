@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #e8e8e8;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="MVC.controller.DashboardSettingsController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #387eff;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #387eff;">
+               <children>
+                  <Label fx:id="labelUsername" text="&lt;username&gt;" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="TOP_CENTER" spacing="10.0">
+                     <children>
+                        <Label text="Points:" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelPoints" text="&lt;points&gt;" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Button fx:id="buttonHome" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Home">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonDiet" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Diet">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/diet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonFitness" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Fitness">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fitness.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonWeight" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Weight">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/weight.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonGroups" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Groups">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/groups.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="145.0" prefWidth="200.0" style="-fx-background-color: #387eff;">
+               <children>
+                  <Button fx:id="buttonHelp" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="200.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Help">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/help.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonSettings" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="200.0" styleClass="buttonMenuSelected" stylesheets="@../style/style.css" text="Settings">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/settings_filled.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="buttonSignOut" alignment="TOP_LEFT" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMenuClicked" prefWidth="194.0" styleClass="buttonMenu" stylesheets="@../style/style.css" text="Sign Out">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <AnchorPane layoutX="200.0" prefHeight="720.0" prefWidth="1214.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="112.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane prefHeight="720.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-112.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="290.0" prefWidth="290.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="270.0" prefWidth="270.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="205.0" prefWidth="205.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="265.0" minWidth="265.0" prefWidth="265.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="buttonSaveNewSecutiyQuestions" mnemonicParsing="false" onAction="#setNewSecurityQuestions" text="Save Security Questions" GridPane.rowIndex="11" />
+                  <Label text="Answer" GridPane.rowIndex="10">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="textFieldSQQuestionTwoAnswer" maxWidth="1.7976931348623157E308" promptText="Answer to Question 2" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <Label text="Question 2" GridPane.rowIndex="9">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <ComboBox fx:id="comboBoxSQQuestionTwo" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label text="Answer" GridPane.rowIndex="8">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="textFieldSQQuestionOneAnswer" maxWidth="1.7976931348623157E308" prefWidth="200.0" promptText="Answer to Question 1" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label text="Question 1" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <ComboBox fx:id="comboBoxSQQuestionOne" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label text="Change Security Questions" wrapText="true" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboBoxWeightFrequency" maxWidth="1.7976931348623157E308" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Change Height" wrapText="true" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Weight Input Frequency" wrapText="true" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="buttonSaveNewPassword" mnemonicParsing="false" onAction="#setNewPassword" text="Save Password" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                  <Label prefWidth="158.0" text="Repeat New Password" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label prefWidth="158.0" text="New Password" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label prefWidth="158.0" text="Current Password" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label prefHeight="11.0" prefWidth="275.0" text="Change Password" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="buttonSaveSettings2" mnemonicParsing="false" onAction="#setNewUserHeight" text="Save Height" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button fx:id="buttonSaveSettings3" mnemonicParsing="false" onAction="#setWeightFrequency" text="Save Weight Frequency" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Label text="Personal">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <Label text="Security" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <Label text="Lifestyle" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="comboBoxLifeStyle" maxWidth="1.7976931348623157E308" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="buttonSaveSettings211" mnemonicParsing="false" onAction="#setNewLifeStyle" text="Save Life style" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <PasswordField fx:id="textFieldChangePWRepeatPassword" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                  <PasswordField fx:id="textFieldChangePWNewPassword" promptText="Hover for security requirements" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                     <tooltip>
+                        <Tooltip fx:id="tooltipPassword" />
+                     </tooltip></PasswordField>
+                  <PasswordField fx:id="textFieldCurrentPassword" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <TextField fx:id="textFieldChangeHeight" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="230.0" promptText="Centimeters" />
+                        <Label text="cm" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </GridPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
